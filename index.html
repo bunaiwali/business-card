@@ -1,1 +1,1157 @@
-<h1>Welcome</h1>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <link rel="canonical" href="" />
+    <title>
+        Business Name
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css -->
+    <meta data-id="type" property="og:type" content="website" />
+
+    <!-- fontawesome css -->
+    <!-- <link rel="stylesheet" href="/public/css/fontawesome.min.css"> -->
+
+    <meta data-id="url" property="og:url" content="" />
+    <meta data-id="image" property="og:image" content="" />
+    <meta data-id="site_name" property="og:site_name" content="" />
+    <link rel="icon" href="" type="png" />
+    <meta name="keywords" content="" />
+    <meta name="language" content="english" />
+    <link rel="apple-touch-icon" href="" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex,nofollow" />
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/templates/website/style20.css" />
+
+    <!--Lightbox CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+        integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate css-->
+    <link rel="stylesheet" href="css/animate.css" id="animateCssLink" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <style>
+        :root {
+            --color-bg: #eaeaea;
+            --color-loader: #222;
+            --loader-size: 100px;
+            --loader-speed: 700ms;
+        }
+
+        .loader {
+            --loader-height: calc(var(--loader-size) / 7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 5000;
+            background-color: #eaeaea;
+        }
+
+        .loader::before {
+            content: "";
+            position: absolute;
+        }
+
+        .loader::before,
+        .loader>span {
+            display: block;
+            width: var(--loader-height);
+            height: var(--loader-height);
+            border-radius: 50%;
+            background: var(--color-loader);
+
+            animation-name: to-right;
+            animation-duration: var(--loader-speed);
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .loader>span:nth-child(even) {
+            visibility: hidden;
+        }
+
+        .loader>span:first-child {
+            animation-name: scale-up;
+        }
+
+        .loader>span:last-child {
+            animation-name: scale-up;
+            animation-direction: reverse;
+        }
+
+        @keyframes to-right {
+            to {
+                transform: translateX(200%);
+            }
+        }
+
+        @keyframes scale-up {
+            from {
+                transform: scale(0);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+
+    <!-- *************************** -->
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- <script src="/js/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader").hide();
+        });
+    </script>
+
+    <!-- *************************** -->
+
+    <div id="view_name" style="display: none">website20</div>
+    <div class="wrapper" id="home">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+            .adb-footer {
+                border-radius: 2px !important;
+                color: black;
+            }
+
+            .expiredText p {
+                color: black !important;
+                font-family: "Roboto", sans-serif !important;
+                position: relative;
+                max-width: 100%;
+                margin: 0;
+                font-size: 20px;
+                font-weight: 400;
+                text-align: justify;
+                text-transform: none;
+                word-wrap: break-word;
+                font-style: normal;
+                line-height: 150%;
+                padding: 0px 15px;
+            }
+
+            .modal {
+                display: none;
+                align-items: center;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 9999;
+            }
+
+            .modal-content {
+                border-radius: 5px;
+                background: #fff;
+                margin: auto;
+                padding: 10px;
+                width: 90%;
+                max-width: 358px;
+                height: 260px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .purchaseButton {
+                --button_color: #e8e8e8;
+                font-size: 14px;
+                font-weight: bold;
+                border: none;
+                border-radius: 20.125px;
+                background: #1e4fad;
+                width: 50%;
+                cursor: pointer;
+                padding: 0 !important;
+            }
+
+            .buttonTop {
+                display: block;
+                box-sizing: border-box;
+                padding: 10px 5px;
+                border-radius: 20.125px;
+                background: #007ab5;
+                color: white !important;
+                transform: translateY(-0.4em);
+                transition: transform 0.1s ease;
+                text-align: center;
+                font-family: "Poppins", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            @media (min-width: 320px) and (max-width: 425px) {
+                .modal-content {
+                    width: 85% !important;
+                }
+
+                .purchaseButton {
+                    width: 60% !important;
+                }
+
+                .expiredText {
+                    margin-bottom: 20px !important;
+                }
+            }
+
+            @media (min-width: 426px) and (max-width: 450px) {
+                .modal-content {
+                    width: 90% !important;
+                }
+
+                .purchaseButton {
+                    width: 60% !important;
+                }
+
+                .expiredText {
+                    margin-bottom: 20px !important;
+                }
+            }
+        </style>
+
+        <div class="adb-footer" id="adbFooter">
+            <a href="https://www.adbanao.com/" target="_blank" style="display: flex; gap: 5px">
+                <p>Created by</p>
+                AdBanao
+            </a>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="expiredText">
+                    <p>
+                        Your 5-day trial has ended. To unlock full features, please proceed to
+                        purchase.
+                    </p>
+                    <p>Thanks for exploring during the trial!</p>
+                </div>
+                <button class="purchaseButton">
+                    <div class="buttonTop">
+                        <img src="images/cart.png"
+                            style="width: 16px; position: relative; top: 3px; right: 10px" />Purchase Now
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            let endDate = "";
+            let isPurchased = "false";
+
+            if (endDate) {
+                let todays_date = Date.parse(new Date());
+                let expiry_date = Date.parse(endDate);
+
+                if (todays_date > expiry_date && isPurchased === "false") {
+
+                    document.querySelector(".modal").style.display = "flex";
+
+                    const purchaseNow = document.querySelector(".purchaseButton");
+
+                    purchaseNow.addEventListener("click", function () {
+                        window.open("https://adbanao.page.link/digi_card", "_blank");
+                    });
+                }
+            }
+
+            if (isPurchased === "true") {
+                $(".bg-img2").hide();
+                $("#downloadPdf").show();
+                $(".container").hide();
+            } else {
+                $(".bg-img2").show();
+                $("#downloadPdf").show();
+                $(".container").show();
+            }
+        </script>
+
+        
+
+        <style>
+            .viewText {
+                color: #000;
+                width: 18px;
+                height: 10px;
+                margin-right: 4px;
+            }
+
+            .countView {
+                position: absolute;
+                top: 0 !important;
+                right: 0 !important;
+                background: #ffffffb8;
+                padding: 2px 10px;
+                color: rgba(0, 0, 0, 0.541) !important;
+                display: flex;
+                font-family: 'Kanit', sans-serif;
+                align-items: center;
+                height: 16px;
+                z-index: 100;
+                font-weight: 600;
+                border-radius: 2px;
+
+            }
+
+            #countView {
+                margin-left: 5px;
+                font-size: 10px;
+            }
+        </style>
+
+        <script src="customJs/viewCount.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!-- <script src="/js/jquery.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+        <script>
+            (function () {
+                count.base_url = "https://vbizcard.in";
+                count.type = "website"
+                count.init();
+            })()
+        </script>
+        <div class="innerWrapper">
+            <div class="download animate__animated animate__rotateIn">
+                <a href="javascript:void(0);" class="downloadAnchor" id="downloadPdf" title="Downloadpdf">
+                    <img src="images/downloadPdf.png" alt="" />
+                </a>
+            </div>
+
+            <img src="images/backgroundImage.png" alt="" class="topBg" id="imgBg" height="800px" />
+
+
+
+            <div class="bg-img2" id="bg-img2">
+            </div>
+
+            <style>
+                .bg-img2 {
+
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: 0.1;
+                    z-index: -1;
+                    background-size: 120px 120px;
+                    background-image: url("images/adbanaoWaterMark.png");
+                }
+            </style>
+
+
+            <!-- for logo -->
+            <div class="logoBox">
+                <div class="logo">
+                    <a href="" class="profile-img">
+                        <img src="images/brandLogo.png" alt="" class="businessLogo" />
+                    </a>
+                </div>
+            </div>
+            <!-- for business details -->
+            <div class="businessContent">
+                <span class="informations">
+                    <p class="businessName">Dev's Handicrafts</p>
+                </span>
+                <p class="businessTitle">GUNJAN SAXENA</p>
+                <!-- <div class="divider"></div> -->
+                <p class="businessDesc">
+                    A specialist handicrafts products made by hand
+                </p>
+            </div>
+            <!-- Start ContactDetails -->
+            <div class="contactDetails">
+                <a href="" title="Phone" class="divIcon mobileNumber16 animate__animated animate__fadeInLeft"
+                    id="mobileNumber">
+                    <div class="firstspan">
+                        <img src="images/contact.png" />
+                    </div>
+                    <div class="secondspan">
+                        <p class="contactpara">+91 9910147112,</p>
+                    </div>
+                </a>
+                <a href="" target="_blank" title="Email" class="divIcon animate__animated animate__fadeInRight"
+                    id="Email">
+                    <div class="firstspan">
+                        <img src="images/email.png" alt="" />
+                    </div>
+                    <div class="secondspan">
+                        <p class="emailPara">devshandicrafts@gmail.com</p>
+                    </div>
+                </a>
+                <a href="" target="_blank" title="Location" class="divIcon animate__animated animate__fadeInLeft"
+                    id="Location">
+                    <div class="firstspan">
+                        <img src="images/location.png" alt="" />
+                    </div>
+                    <div class="secondspan">
+                        <p class="locationPara">HNO: 427-A,GF, KHANNA NAGAR LONI
+                            GHAZIABAD (U.P) PIN 201102</p>
+                    </div>
+                </a>
+                <a href="" target="_blank" title="Website" class="divIcon animate__animated animate__fadeInRight"
+                    id="Website">
+                    <div class="firstspan">
+                        <img src="images/website.png" alt="" />
+                    </div>
+                    <div class="secondspan">
+                        <p class="websitePara">www.devshandicrafts.com</p>
+                    </div>
+                </a>
+                <div id="saveContact">
+                    <a href="" target="_blank" title="Save Contact"
+                        class="divIcon animate__animated animate__fadeInLeft">
+                        <div class="firstspan">
+                            <img src="images/downloadVCF.png" alt="" />
+                        </div>
+                        <div class="secondspan">
+                            <p class="">Save Contact</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End ContactDetails -->
+
+            <!-- Start Custom File CTA -->
+
+            <!-- End Custom File CTA -->
+
+            <!-- Start mediaIcons -->
+            <div class="mediaIcons animate__animated animate__lightSpeedInLeft animate__repeat-1">
+                
+
+                <div class="socialMedi" id="facebook">
+                    <a href="#" target="_blank"><img src="images/facebook.png" alt="" title="Facebook" /></a>
+                </div>
+
+                <div class="socialMedi" id="instagram">
+                    <a href="#" target="_blank"><img src="images/instagram.png" alt="" title="Instagram" /></a>
+                </div>
+
+                <div class="socialMedi" id="Whatsapp">
+                    <a href="#" target="_blank"><img src="images/whatsapp.svg" alt=""
+                            title="Whatsapp" /></a>
+                </div>
+
+                <div class="socialMedi" id="twitter">
+                    <a href="#" target="_blank"><img src="images/twitter.png" alt="" title="Twitter" /></a>
+                </div>
+
+                <div class="socialMedi" id="youtube">
+                    <a href="#" target="_blank"><img src="images/youtube.png" alt="" title="Youtube" /></a>
+                </div>
+
+                
+            </div>
+            <!-- End mediaIcons -->
+        </div>
+
+        <!-- Start About us section -->
+        <section class="aboutUs" id="about">
+            <h6 class="aboutUsHead">About Us</h6>
+            <div class="innerWrapper">
+                <div class="aboutUsDesc">
+                    <pre style="white-space:pre-wrap;"><b>Gunjan Saxena’s</b> main objective is to create eco-friendly products made from natural materials that cause no harm to the environment. She personally crafts a variety of items including shoe bags, files, bottle bags, shagun envelopes, tote bags, file folders made of cloth, jute planters, jewelry from old cloth, key rings, and even electricity cable baskets. Her initiative demonstrates a commitment to psychology-based principles by utilizing inexpensive, non-polluting materials that are safe for nature. So far, over 500 people have joined Gunjan Saxena in her mission. Her team actively visits rural areas to teach these skills, spreading sustainable practices. She has worked across five Indian states—Uttar Pradesh, Haryana, Rajasthan, Uttarakhand, and Himachal Pradesh—helping villagers gain employment through hands-on training.
+                </pre></div>
+                <style>
+.fileCta #downloadImage {
+width: 20px;
+height: 20px;
+margin-top: 3px;
+}
+
+
+.fileCta {
+display: flex;
+justify-content: center;
+width: 100%;
+margin-top: 22px
+}
+
+.fileCta .customFileDiv {
+display: flex;
+gap: 7px;
+background-color: black;
+padding: 8px 15px;
+border-radius: 4px;
+}
+
+.fileCta .fileUrl {
+color: #FFFFFF;
+font-family: var(--primary-font);
+text-align: center;
+font-size: 16px;
+text-decoration: none;
+font-weight: 700;
+}
+</style>
+
+<!-- Start Custom File CTA -->
+<div id="customFileCta" class="fileCta" style="display: none;">
+<div class="customFileDiv">
+<img id="downloadImage" src="images/download-white.png">
+<a href="" target="_blank" title="File" class="btn fileUrl">
+
+</a>
+</div>
+</div>
+<!-- End Custom File CTA -->
+            </div>
+        </section>
+        <!-- End About us section -->
+
+        <!-- Start Products & Services section -->
+        <section class="productsAndServices" id="productServices">
+            <h6 class="productAndServicesHead">Products & Services</h6>
+            <div class="cardWrapper">
+                <div class="productbox"><a href="images/imgGallery_section.png" class="card"
+                        data-lightbox="product" data-title="Lorem, ipsum dolor.| Lorem ipsum dolor sit amet."><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a>
+                    <p class="productTitle">Lorem, ipsum dolor.</p>
+                    <p class="productDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="productbox"><a href="images/imgGallery_section.png" class="card"
+                        data-lightbox="product" data-title="Lorem, ipsum dolor.| Lorem ipsum dolor sit amet."><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a>
+                    <p class="productTitle">Lorem, ipsum dolor.</p>
+                    <p class="productDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="productbox"><a href="images/imgGallery_section.png" class="card"
+                        data-lightbox="product" data-title="Lorem, ipsum dolor.| Lorem ipsum dolor sit amet."><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a>
+                    <p class="productTitle">Lorem, ipsum dolor.</p>
+                    <p class="productDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="productbox"><a href="images/imgGallery_section.png" class="card"
+                        data-lightbox="product" data-title="Lorem, ipsum dolor.| Lorem ipsum dolor sit amet."><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a>
+                    <p class="productTitle">Lorem, ipsum dolor.</p>
+                    <p class="productDesc">Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End Products & Services section -->
+
+        <!-- Start image gallery -->
+        <section class="imageGallery" id="imageGallery">
+            <h6 class="imageGalleryHead">Image Gallery</h6>
+            <div class="galleryWrapper">
+                <div class="galleryImage"><a href="images/imgGallery_section.png" data-lightbox="models"><img
+                            src="images/imgGallery_section.png" alt=""></a></div>
+                <div class="galleryImage"><a href="images/imgGallery_section.png" data-lightbox="models"><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a></div>
+                <div class="galleryImage"><a href="images/imgGallery_section.png" data-lightbox="models"><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a></div>
+                <div class="galleryImage"><a href="images/imgGallery_section.png" data-lightbox="models"><img
+                            src="images/imgGallery_section.png" alt=""></a></div>
+                <div class="galleryImage"><a href="images/imgGallery_section.png" data-lightbox="models"><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a></div>
+                <div class="galleryImage"><a href="images/imgGallery_section.png" data-lightbox="models"><img
+                            src="images/imgGallery_section.png" alt="" data-lightbox="models"></a></div>
+            </div>
+        </section>
+        <!-- End image gallery -->
+
+        <!-- Start video section -->
+        <section class="upiSection" id="videoGallery">
+            <h6 class="upiHead">Video Gallery</h6>
+            <div class="video_gallary">
+                <div class="upiWrapper">
+                    <img src="images/youtube_section.png">
+                </div>
+            </div>
+        </section>
+        <!-- End  video section -->
+
+        <!-- Start UPI -->
+        <section class="upiSection" id="UPI">
+            <h6 class="upiHead">UPI</h6>
+
+            <input type="text" id="copyInput" class="copyInput" style="height: 0" />
+
+            <div class="upiWrapper" id="gpay">
+                <a href="javascript:void(0)" class="upiIconText">
+                    <img src="images/googlepay.png" alt="" />
+                    <span class="gpaytxt">matrimony@ybl</span>
+                </a>
+
+                <a href="javascript:void(0)" class="upiCopy mobHide desk" onclick="copyUpi(event, this)">
+                    <img src="images/copy.png" alt="" />
+                    <span>Copy</span>
+                </a>
+
+                <a class="mobShow payNow" onClick="redirectToUpi(this, event)">
+                    <img src="images/qr.svg" alt="" />
+                    <span>Download QR</span>
+                </a>
+            </div>
+
+            <div class="upiWrapper" id="phonePe">
+                <a href="javascript:void(0)" class="upiIconText">
+                    <img src="images/phonepay.png" alt="" />
+                    <span class="phonePetxt">matrimony@ybl</span>
+                </a>
+                <a href="javascript:void(0)" class="upiCopy mobHide desk" onclick="copyUpi(event, this)">
+                    <img src="images/copy.png" alt="" />
+                    <span>Copy</span>
+                </a>
+
+                <a class="mobShow payNow" onClick="redirectToUpi(this, event)">
+                    <img src="images/qr.svg" alt="" />
+                    <span>Download QR</span>
+                </a>
+            </div>
+
+            <div class="upiWrapper" id="paytm">
+                <a href="javascript:void(0)" class="upiIconText">
+                    <img src="images/paytm.png" alt="" />
+                    <span class="paytmtxt">749659857645</span>
+                </a>
+                <a href="javascript:void(0)" class="upiCopy mobHide desk" onclick="copyUpi(event, this)">
+                    <img src="images/copy.png" alt="" />
+                    <span>Copy</span>
+                </a>
+
+                <a class="mobShow payNow" onClick="redirectToUpi(this, event)">
+                    <img src="images/qr.svg" alt="" />
+                    <span>Download QR</span>
+                </a>
+            </div>
+
+            <div class="upiWrapper" id="amazonPay">
+                <a href="javascript:void(0)" class="upiIconText">
+                    <img src="images/amazonPay.svg" alt="" />
+                    <span class="amazonPaytxt">Amazon@pe</span>
+                </a>
+                <a href="javascript:void(0)" class="upiCopy mobHide desk" onclick="copyUpi(event, this)">
+                    <img src="images/copy.png" alt="" />
+                    <span>Copy</span>
+                </a>
+
+                <a class="mobShow payNow" onClick="redirectToUpi(this, event)">
+                    <img src="images/qr.svg" alt="" />
+                    <span>Download QR</span>
+                </a>
+            </div>
+
+            <div class="upiWrapper" id="bharatPay">
+                <a href="javascript:void(0)" class="upiIconText">
+                    <img src="images/bharatPay.svg" alt="" />
+                    <span class="bharatPaytxt">bharatpe</span>
+                </a>
+                <a href="javascript:void(0)" class="upiCopy mobHide desk" onclick="copyUpi(event, this)">
+                    <img src="images/copy.png" alt="" />
+                    <span>Copy</span>
+                </a>
+
+                <a class="mobShow payNow" onClick="redirectToUpi(this, event)">
+                    <img src="images/qr.svg" alt="" />
+                    <span>Download QR</span>
+                </a>
+            </div>
+        </section>
+        <!-- End UPI -->
+
+        <!-- start Contact Us section -->
+        <section class="conatctUs" id="contactUs">
+            <h6 class="conatctUsHead">Enquiry</h6>
+            <div class="formWrapper">
+                <form id="submitForm">
+                    <div class="inputSection">
+                        <span class="inputIcon">
+                            <img src="images/userEnquiry.png" alt="" />
+                        </span>
+                        <input type="text" name="userName" placeholder="Enter Your Name" id="userName" />
+                        <span class="userNameError"></span>
+                    </div>
+
+                    <div class="inputSection">
+                        <span class="inputIcon">
+                            <img src="images/phoneEnquiry.png" alt="" />
+                        </span>
+                        <input type="text" name="userNumber" placeholder="Enter Your Mobile No" id="userNumber"
+                            maxlength="10" required />
+                        <span class="userNumberError"></span>
+                    </div>
+
+                    <div class="inputSection">
+                        <span class="inputIcon">
+                            <img src="images/mailEnquiry.png" alt="" />
+                        </span>
+                        <input type="email" name="userEmail" placeholder="Enter Your Email Address" id="userEmail" />
+                        <span class="userEmailError"></span>
+                    </div>
+
+                    <div class="inputSection">
+                        <span class="inputIcon">
+                            <img src="images/messageEnquiry.png" alt="" />
+                        </span>
+                        <textarea name="message" cols="30" rows="6" placeholder="Enter your Message or Query"
+                            id="message"></textarea>
+                        <span class="messageError"></span>
+                    </div>
+
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+
+
+
+
+            <style>
+                @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+                .container {
+                    position: fixed;
+                    bottom: 12.9%;
+                    width: 448px;
+                    height: 101px;
+                    opacity: 0.9;
+                    backdrop-filter: blur(1000px);
+                    align-items: center;
+                    display: flex;
+                    margin: 0 auto;
+                    margin-top: 5px;
+                    border-radius: 16px 16px 0px 0px;
+                    background: rgba(0, 0, 0, 0.7);
+                    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.08);
+                }
+
+                .firstSection {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    justify-content: space-around;
+                    height: 80px;
+                }
+
+                .secondSection {
+                    display: flex;
+                    justify-content: center;
+                    width: 50%;
+                }
+
+                .cardPrice {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+
+                .purchaseBtn {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .expiryBox {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                .expiryHeader {
+                    color: #000;
+                    text-align: center;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 13.5px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+
+                .popup {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 11px;
+                    background: #e1edff;
+                    width: 80%;
+                    height: 70px;
+                }
+
+                .demo {
+                    display: flex;
+                    color: #000000 !important;
+                }
+
+                .countDown {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                }
+
+                .countDownValue {
+                    color: #000;
+                    text-align: center;
+                    font-family: Helvetica;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                    letter-spacing: 0.945px;
+                }
+
+                .countDownText {
+                    color: #000;
+                    font-family: "Montserrat";
+                    font-size: 9px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+
+                .sellingPricingText {
+                    color: #fff;
+                    text-align: center;
+                    font-family: Helvetica;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%;
+                }
+
+                .maximumRetailsPrice {
+                    color: #d2d2d2;
+                    text-align: center;
+                    font-family: Helvetica;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                    text-decoration: line-through;
+                }
+
+                .discountedPercentage {
+                    color: #fff;
+                    text-align: center;
+                    font-family: Helvetica;
+                    font-size: 13.274px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+
+                button {
+                    --button_color: #e8e8e8;
+                    font-size: 14px;
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 20.125px;
+                    background: #1e4fad;
+                    width: 90%;
+                }
+
+                .button_top {
+                    display: block;
+                    box-sizing: border-box;
+                    padding: 7px 5px;
+                    border-radius: 20.125px;
+                    background: #007ab5;
+                    color: white;
+                    transform: translateY(-0.2em);
+                    transition: transform 0.1s ease;
+                    text-align: center;
+                    font-family: "Poppins", sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                }
+
+                @media (min-width: 320px) and (max-width: 425px) {
+                    .container {
+                        max-width: 100%;
+                        bottom: 11.6% !important;
+                    }
+
+                    .popup {
+                        font-size: 15px !important;
+                        margin: 0px 10px !important;
+                    }
+
+                    .button_top {
+                        font-size: 12px;
+                    }
+
+                }
+
+                @media (min-width: 426px) and (max-width: 430px) {
+                    .container {
+                        max-width: 100%;
+                        bottom: 9.8% !important;
+                    }
+
+                    .popup {
+                        font-size: 15px !important;
+                        margin: 0px 10px !important;
+                    }
+
+                    .button_top {
+                        font-size: 12px;
+                    }
+
+                }
+            </style>
+
+            <script>
+                let ended_date = "";
+                let maximumRetailPrice = "";
+                let sellingPrice = "";
+
+                var last_end_date = new Date(`${ended_date}`).getTime();
+
+                var x = setInterval(function () {
+                    var now = new Date().getTime();
+                    var distance = last_end_date - now;
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor(
+                        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                    );
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    $("#daysValue").html(padAndStringify(days) + " : ");
+                    $("#hoursValue").html(padAndStringify(hours) + " : ");
+                    $("#minutesValue").html(padAndStringify(minutes) + " : ");
+                    $("#secondsValue").html(padAndStringify(seconds));
+
+                    $(".sellingPrice").html(`₹ ${sellingPrice}`).addClass("sellingPricingText");
+                    $(".mrp").html(`₹ ${maximumRetailPrice}`).addClass("maximumRetailsPrice");
+                    $(".discountedPercentage")
+                        .html(discountedPercentage(maximumRetailPrice, sellingPrice) + "% OFF")
+                        .addClass("discountedPercentage");
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        $(".countDown").remove();
+
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+
+                function padAndStringify(num) {
+                    return num.toString().padStart(2, "0");
+                }
+
+                function discountedPercentage(originalPrice, discountedPrice) {
+                    const discountPercentage = Math.floor(((originalPrice - discountedPrice) / originalPrice) * 100);
+                    return discountPercentage;
+                }
+
+                const purchaseNow = document.querySelector(".purchase_now");
+
+                purchaseNow.addEventListener("click", function () {
+                    window.open("https://adbanao.page.link/digi_card", "_blank");
+                });
+
+            </script>
+
+
+        </section>
+        <!-- End Contact Us section -->
+
+        <!-- Start mainfooter -->
+        <footer class="mainFooter">
+            <div class="footerContainer">
+                <a href="#home" title="home" class="footerIcons" id="footerHome">
+                    <div>
+                        <img src="images/home.png" alt="" />
+                    </div>
+                    <div>
+                        <p>Home</p>
+                    </div>
+                </a>
+
+                <a href="#about" title="about" class="footerIcons" id="footerAbout">
+                    <div>
+                        <img src="images/about.png" alt="" />
+                    </div>
+                    <div>
+                        <p>About</p>
+                    </div>
+                </a>
+
+                <a href="#imageGallery" title="Gallery" class="footerIcons last" id="footerGallery">
+                    <div>
+                        <img src="images/gallery.png" alt="" />
+                    </div>
+                    <div>
+                        <p>Gallery</p>
+                    </div>
+                </a>
+
+                <a href="#UPI" title="UPI" class="footerIcons" id="footerUpi">
+                    <div>
+                        <img src="images/upi.png" alt="" />
+                    </div>
+                    <div>
+                        <p>UPI</p>
+                    </div>
+                </a>
+
+                <a href="#contactUs" title="Enquiry" class="footerIcons" id="footerEnquiry">
+                    <div>
+                        <img src="images/enquiry.png" alt="" />
+                    </div>
+                    <div>
+                        <p>Enquiry</p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <!-- End mainfooter -->
+
+    <div id="combined-image-container">
+        <div id="qrContainer">
+            <div id="qrCode"></div>
+
+        </div>
+    </div>
+
+    <div id="combined-image" style="display: none"></div>
+
+    <!-- <script src="/js/jquery.min.js"></script> -->
+    <script>
+        let baseUrl = "http://localhost/card/";
+        // for payment
+        const copyUpi = (event, element) => {
+
+            const text = $(element).parent().find('.upiIconText').find('span').text();
+            const copyText = document.getElementById("copyInput");
+            copyText.value = text;
+
+            // Create a hidden input field
+            const hiddenInput = document.createElement("input");
+            hiddenInput.type = "text";
+            hiddenInput.style.position = "absolute";
+            hiddenInput.style.left = "-9999px";
+            document.body.appendChild(hiddenInput);
+            hiddenInput.value = copyText.value;
+            hiddenInput.select();
+
+            try {
+                document.execCommand("copy");
+                toastr.success("UPI Copied");
+            } catch (error) {
+                console.error("Error copying UPI:", error);
+                toastr.error("Error copying UPI");
+            }
+
+            document.body.removeChild(hiddenInput);
+
+        }
+
+        const redirectToUpi = (element, event) => {
+            event.preventDefault();
+            const text = $(element)
+                .parent()
+                .find(".upiIconText")
+                .find("span")
+                .text();
+            const upiLink = `upi://pay?pa=${text}`;
+
+            const qrCode = new QRCode(document.getElementById("qrCode"), upiLink);
+
+
+
+            const combinedImageContainer = document.getElementById(
+                "combined-image-container"
+            );
+
+            html2canvas(combinedImageContainer).then((canvas) => {
+                const dataUrl = canvas.toDataURL("image/png");
+                const img = new Image();
+                img.src = dataUrl;
+
+                document.getElementById("combined-image").appendChild(img);
+
+                const downloadLink = document.createElement("a");
+                downloadLink.href = dataUrl;
+                downloadLink.download = "QR.png";
+                downloadLink.click();
+
+                qrCode.clear();
+
+                $("#combined-image").html("")
+                $("#qrCode").html("")
+            });
+        };
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/qrcode.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="assets/js/websiteTemplate-1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+</html>
