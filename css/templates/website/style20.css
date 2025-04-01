@@ -72,7 +72,7 @@ html {
 }
 
 .businessLogo {
-    width: 118px;
+    width: 153px;
     height: auto;
 }
 
@@ -86,9 +86,9 @@ html {
 .businessName {
     font-family: var(--primary-font);
     font-weight: 700;
-    font-size: 27px;
+    font-size: 32px;
     color: #000000;
-    width: 114%;
+    width: 100%;
     word-break: break-word;
     /* margin-bottom: 10px; */
 }

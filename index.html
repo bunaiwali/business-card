@@ -151,7 +151,7 @@
 
     <!-- *************************** -->
 
-    <div id="view_name" style="display: none">website20</div>
+    <div id="view_name" style="display: none">Bunaiwali</div>
     <div class="wrapper" id="home">
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
@@ -260,66 +260,15 @@
             }
         </style>
 
-        <div class="adb-footer" id="adbFooter">
-            <a href="https://www.adbanao.com/" target="_blank" style="display: flex; gap: 5px">
-                <p>Created by</p>
-                AdBanao
-            </a>
-        </div>
+      
 
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <div class="expiredText">
-                    <p>
-                        Your 5-day trial has ended. To unlock full features, please proceed to
-                        purchase.
-                    </p>
-                    <p>Thanks for exploring during the trial!</p>
-                </div>
-                <button class="purchaseButton">
-                    <div class="buttonTop">
-                        <img src="images/cart.png"
-                            style="width: 16px; position: relative; top: 3px; right: 10px" />Purchase Now
-                    </div>
-                </button>
-            </div>
-        </div>
-
+       
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
             integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script>
-            let endDate = "";
-            let isPurchased = "false";
-
-            if (endDate) {
-                let todays_date = Date.parse(new Date());
-                let expiry_date = Date.parse(endDate);
-
-                if (todays_date > expiry_date && isPurchased === "false") {
-
-                    document.querySelector(".modal").style.display = "flex";
-
-                    const purchaseNow = document.querySelector(".purchaseButton");
-
-                    purchaseNow.addEventListener("click", function () {
-                        window.open("https://adbanao.page.link/digi_card", "_blank");
-                    });
-                }
-            }
-
-            if (isPurchased === "true") {
-                $(".bg-img2").hide();
-                $("#downloadPdf").show();
-                $(".container").hide();
-            } else {
-                $(".bg-img2").show();
-                $("#downloadPdf").show();
-                $(".container").show();
-            }
-        </script>
+       
 
         
 
@@ -359,16 +308,7 @@
             integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <!-- <script src="/js/jquery.min.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-
-        <script>
-            (function () {
-                count.base_url = "https://vbizcard.in";
-                count.type = "website"
-                count.init();
-            })()
-        </script>
+       
         <div class="innerWrapper">
             <div class="download animate__animated animate__rotateIn">
                 <a href="javascript:void(0);" class="downloadAnchor" id="downloadPdf" title="Downloadpdf">
@@ -410,7 +350,7 @@
             <!-- for business details -->
             <div class="businessContent">
                 <span class="informations">
-                    <p class="businessName">Dev's Handicrafts</p>
+                    <p class="businessName">Bunaiwali</p>
                 </span>
                 <p class="businessTitle">GUNJAN SAXENA</p>
                 <!-- <div class="divider"></div> -->
