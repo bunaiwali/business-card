@@ -121,6 +121,10 @@
                 transform: scale(1);
             }
         }
+
+        #downloadPdf{
+            display: none;
+        }
     </style>
 
     <!-- *************************** -->
@@ -710,44 +714,8 @@ font-weight: 700;
         <!-- start Contact Us section -->
         <section class="conatctUs" id="contactUs">
             <h6 class="conatctUsHead">Enquiry</h6>
-            <div class="formWrapper">
-                <form id="submitForm">
-                    <div class="inputSection">
-                        <span class="inputIcon">
-                            <img src="images/userEnquiry.png" alt="" />
-                        </span>
-                        <input type="text" name="userName" placeholder="Enter Your Name" id="userName" />
-                        <span class="userNameError"></span>
-                    </div>
-
-                    <div class="inputSection">
-                        <span class="inputIcon">
-                            <img src="images/phoneEnquiry.png" alt="" />
-                        </span>
-                        <input type="text" name="userNumber" placeholder="Enter Your Mobile No" id="userNumber"
-                            maxlength="10" required />
-                        <span class="userNumberError"></span>
-                    </div>
-
-                    <div class="inputSection">
-                        <span class="inputIcon">
-                            <img src="images/mailEnquiry.png" alt="" />
-                        </span>
-                        <input type="email" name="userEmail" placeholder="Enter Your Email Address" id="userEmail" />
-                        <span class="userEmailError"></span>
-                    </div>
-
-                    <div class="inputSection">
-                        <span class="inputIcon">
-                            <img src="images/messageEnquiry.png" alt="" />
-                        </span>
-                        <textarea name="message" cols="30" rows="6" placeholder="Enter your Message or Query"
-                            id="message"></textarea>
-                        <span class="messageError"></span>
-                    </div>
-
-                    <button type="submit" id="submit">Submit</button>
-                </form>
+            <div class="formWrapper" style="border: none">
+               
             </div>
 
 
