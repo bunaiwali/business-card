@@ -376,15 +376,16 @@ console.log("Else")
 
       //  download VCF
       // let lastId = window.location.href.split("/").pop();
-      $("#saveContact")
-        .find("a")
-        .attr("href", `${baseUrl}/generateWebsiteVcf?cardLink=${lastId}`);
-      // for website-8
-      $("#saveContact").attr(
-        "href",
-        `${baseUrl}/generateWebsiteVcf?cardLink=${lastId}`
-      );
-
+      $("#saveContact").on("click", function () {
+        const vcfPath = "contact.vcf"; // Adjust path to match your file location      
+        // Create a temporary <a> element to trigger download
+        const link = document.createElement("a");
+        link.href = vcfPath;
+        link.download = "contact.vcf"; // Optional: rename downloaded file
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
       // For Payment
 
       const payment = [
