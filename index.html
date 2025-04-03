@@ -548,16 +548,51 @@ font-weight: 700;
         </section>
         <!-- End image gallery -->
 
+
+        <style>
+             
+
+           
+
+.videoSwiper {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.videoSwiper img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+        </style>
+      
         <!-- Start video section -->
         <section class="upiSection" id="videoGallery">
             <h6 class="upiHead">Video Gallery</h6>
-            <div class="video_gallary">
-                <div class="upiWrapper">
-                    <img src="images/youtube_section.png">
+        
+            <div class="swiper videoSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">                        
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/DIz7u9oRIbA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">                       
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/a_KMpigFuqY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xUy7xTpDkVM" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
+                <!-- Add navigation arrows -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
-        <!-- End  video section -->
+        <!-- End video section -->
 
         
 
@@ -621,12 +656,12 @@ font-weight: 700;
 
         <!-- start Contact Us section -->
         <section class="conatctUs" id="contactUs">
-            <a href="https://forms.gle/EfRG1FYoxAR8ZVY26" target="_blank" style="text-decoration: none;"><h6 class="conatctUsHead">Enquiry</h6></a>
+            <a href="https://forms.gle/EfRG1FYoxAR8ZVY26" target="_blank" style="text-decoration: none; border: none; margin-bottom: -65px;"><h6 class="conatctUsHead">Enquiry</h6></a>
             <div class="formWrapper" style="border: none">
                
             </div>
 
-            <a href="https://forms.gle/EfRG1FYoxAR8ZVY26" target="_blank" style="text-decoration: none;"><h6 class="conatctUsHead">Our Shop</h6></a>
+            <a href="" target="_blank" style="text-decoration: none;"><h6 class="conatctUsHead">Our Shop</h6></a>
               
             <!-- Logo Links -->
             <div class="formWrapper" style="border: none; display: flex; justify-content: center; gap: 2rem; margin-top: 1rem;">
@@ -646,7 +681,7 @@ font-weight: 700;
     
   
     .shop-logo {
-      height: 40px;
+      height: 35px;
       transition: transform 0.3s ease;
     }
   
@@ -658,6 +693,11 @@ font-weight: 700;
       display: flex;
       align-items: center;
     }
+
+
+   
+
+
   </style>
 
 
@@ -808,6 +848,24 @@ font-weight: 700;
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="assets/js/websiteTemplate-1.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper JS and CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    const swiper = new Swiper('.videoSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
+
+
 </body>
 
 </html>
