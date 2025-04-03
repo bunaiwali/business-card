@@ -377,6 +377,7 @@ console.log("Else")
       //  download VCF
       // let lastId = window.location.href.split("/").pop();
       $("#saveContact").on("click", function () {
+        alert();
         const vcfPath = "contact.vcf"; // Adjust path to match your file location      
         // Create a temporary <a> element to trigger download
         const link = document.createElement("a");
